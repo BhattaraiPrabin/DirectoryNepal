@@ -1,0 +1,418 @@
+.page_header {
+    background-color: #f0e5d9;
+    display: flex;
+    height: 5.3125rem;
+    flex-flow: row nowrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1150;
+}
+
+.brand-logo {
+    /* background-color: #6b0e0e;  */
+    height: 5.3125rem;
+    width: 17.5rem;
+    margin-left: 0.75rem;
+    position: relative;
+    z-index: 850;
+}
+
+/* .brand-logo::before {
+    content: "Directory Nepal";
+    font-size: large; */
+/* } */
+.brand-logo--link {
+    height: 3.3125rem;
+    width: 5.125rem;
+    margin-left: 2rem;
+}
+
+/* .brand-logo::before {
+    height: 5.3125rem;
+    width: 13.125rem;
+    margin-left: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+}
+.page-header .brand-logo::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #FFFFFF;
+    height: 3.125rem;
+    width: 1.125rem;
+} */
+.navbar-nav {
+    color: navy;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.nav-item {
+    margin-left: 3rem;
+}
+
+/* .nav-link-call{
+    background-color: black;
+} */
+.nav-item-button {
+    margin-left: 10rem;
+}
+
+#body-section {
+    margin-top: 30rem;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#directoryContainer {
+    margin-top: 5rem;
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 20px;
+}
+.container-entry{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    height: 31rem;
+}
+.iframe{
+    height: 31rem;
+
+}
+
+.right-column {
+    margin-top: 0px;
+    flex: 2;
+    padding: 20px;
+    height: 31rem;
+    border-left: #04350a 2px solid;
+
+}
+/* .right-column h1 {
+    font-size: 24px;
+}
+
+.right-column h2 {
+    font-size: 18px;
+    margin-top: 20px;
+} */
+
+.right-column p {
+    font-size: 16px;
+}
+.directory-image{
+   
+        width: 200px; /* Set the width of the image */
+        height: 150px; /* Set the height of the image */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+
+
+
+.ratings-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.ratings-section h2 {
+    font-size: 24px;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rating {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    width: calc(50% - 20px);
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ratings-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.ratings-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rating {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    flex: 0 0 calc(50% - 20px);
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.rating-info {
+    flex: 0 0 40%;
+}
+
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.user-review {
+    flex: 1;
+}
+
+.user-review h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.user-review p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Styles for the FAQs section */
+.faqs-section {
+    background-color: #f0f0f0; /* Set a background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.faqs-section h2 {
+    font-size: 24px; /* Customize the heading font size */
+}
+
+.faqs {
+    display: flex; /* Display FAQs in a row */
+    flex-wrap: wrap; /* Allow them to wrap to the next row if needed */
+    gap: 20px; /* Add spacing between FAQs */
+}
+
+.faq {
+    background-color: #ffffff; /* Set a background color for each FAQ */
+    padding: 10px; /* Add padding for spacing within each FAQ */
+    border: 1px solid #e0e0e0; /* Add a border for separation */
+    width: calc(50% - 20px); /* Make each FAQ take up 50% of the container width with spacing in between */
+}
+
+.faq h3 {
+    font-size: 18px; /* Customize the FAQ question font size */
+    margin: 0; /* Remove default margin for consistency */
+}
+
+.faq p {
+    font-size: 16px; /* Customize the FAQ answer font size */
+}
+/* Styles for the map section */
+.map-section {
+    background-color: #f0f0f0; /* Set a background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.map-section h2 {
+    font-size: 24px; /* Customize the heading font size */
+}
+
+.map-section iframe {
+    width: 100%; /* Set the map to 100% width */
+    height: 400px; /* Set the map height */
+    border: 0; /* Remove iframe border */
+}
+
+/* Styles for the Business Form Section */
+.business-form-section {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+.business-form-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.business-form-section .left-column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.business-form-section .left-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.business-form-section .right-column {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.business-form-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.business-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.business-form .form-group {
+    margin-bottom: 20px;
+}
+
+.business-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.business-form input[type="text"],
+.business-form input[type="email"],
+.business-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.business-form textarea {
+    height: 120px;
+}
+
+.business-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.business-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styles for the footer section */
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: white; /* Text color for the footer */
+    padding: 20px 0; /* Add padding to the footer content */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox to layout footer content */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: flex-start; /* Align elements to the top */
+}
+
+.footer-column {
+    flex: 1; /* Make each column take up equal space */
+    padding: 0 20px; /* Add horizontal spacing between columns */
+}
+
+.footer-logo img {
+    width: 50px; /* Set the width of the footer logo */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-links ul li {
+    margin-bottom: 10px; /* Add spacing between footer links */
+}
+
+.footer-links ul li a {
+    color: white; /* Text color for footer links */
+    text-decoration: none; /* Remove underlines */
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-contact p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer-button a {
+    background-color: #4CAF50; /* Background color for the button */
+    color: white; /* Text color for the button */
+    padding: 10px 20px; /* Add padding to the button */
+    text-decoration: none; /* Remove underlines from the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    display: block; /* Make the button a block-level element */
+    text-align: center; /* Center-align text in the button */
+}
+
+.footer-button a:hover {
+    background-color: #45a049; /* Darken the button on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center-align text in the footer bottom */
+    margin-top: 20px; /* Add spacing between content and footer bottom */
+    font-size: 14px; /* Set font size for footer bottom text */
+}
+
+

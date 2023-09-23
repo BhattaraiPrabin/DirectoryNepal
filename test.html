@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Modal</title>
+    <!-- Add Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Add your own CSS for further styling -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button to trigger the modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#directoryModal">
+        Add Directory
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="directoryModal" tabindex="-1" aria-labelledby="directoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="directoryModalLabel">Add Directory Entry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="directoryForm">
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image URL</label>
+                            <input type="text" class="form-control" id="image" placeholder="Image URL">
+                        </div>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" rows="4" placeholder="Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mapEmbed" class="form-label">Map Embed</label>
+                            <input type="text" class="form-control" id="mapEmbed" placeholder="Map Embed">
+                        </div>
+                        <div class="mb-3">
+                            <label for="websiteLink" class="form-label">Website Link</label>
+                            <input type="text" class="form-control" id="websiteLink" placeholder="Website Link">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addDirectory()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // JavaScript to handle form submission and API request
+        async function addDirectory() {
+            const image = document.getElementById('image').value;
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+            const mapEmbed = document.getElementById('mapEmbed').value;
+            const websiteLink = document.getElementById('websiteLink').value;
+
+            const directoryData = {
+                image,
+                title,
+                description,
+                mapEmbed,
+                websiteLink
+            };
+
+            try {
+                const response = await fetch('/api/directory', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(directoryData)
+                });
+
+                if (response.ok) {
+                    // Data added successfully, close the modal
+                    document.getElementById('directoryForm').reset();
+                    $('#directoryModal').modal('hide');
+                    // You can also reload or update the directory list here
+                } else {
+                    console.error('Failed to add directory entry');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "64ecdc3c500dc37e7e350bd6"
+  },
+  "image": "http://localhost/guru",
+  "title": "Guru Solution 2",
+  "description": "This is Guru 23tr5ykul.kjhmhtnrgrw",
+  "mapEmbed": "KTM 44600",
+  "websiteLink": "nepguru.com",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ece67e89f9f7d4fc12ba10"
+  },
+  "image": "sertuy",
+  "title": "q3wetry",
+  "description": "qw3te4ry",
+  "mapEmbed": "q3wte4ry",
+  "websiteLink": "wqret",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ece6b989f9f7d4fc12ba12"
+  },
+  "image": "ware",
+  "title": "q2rwe",
+  "description": "3465",
+  "mapEmbed": "2qw4e5",
+  "websiteLink": "4ryw3",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ecf2118fa8c355a1d53a04"
+  },
+  "image": "https://nepguru.com/wp-content/uploads/2020/08/Edit-1.jpg",
+  "title": "Guru Institute of Engineering & Technology",
+  "description": "Guru Institute of Engineering & Technology- One and Only Must trusted repair and training center in Kathmandu",
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4580850681973!2d85.30759637435708!3d27.703139325679082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b7b5f34233%3A0x6013ecacc7780750!2sGuru%20Computer%20Solution!5e0!3m2!1sen!2snp!4v1693249984612!5m2!1sen!2snp",
+  "websiteLink": "https://nepguru.com",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eed0b1d974ee762e24bdbe"
+  },
+  "image": "https://skilltrainingnepal.com/storage/site_setting/X2N5sIsm0gYGsIvcWbJq11I1Z5tNSBUjhCV6o4aq.png",
+  "title": "Skill Training Nepal",
+  "description": "Skill Training Nepal is a well-established and trusted training center for various IT courses in Nepal since 2019. We are a career-oriented IT skill development institution that provides intense training programs for all students who desired to learn new software technologies. Skill Training Nepal holds the best and inevitable position in the market in a very short span. The teaching quality with a unique and practical point of view makes us No. 1 in the market. ",
+  "mapEmbed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7065.575744426507!2d85.32326689317478!3d27.692950454762915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197e646d1ac3%3A0xc0868a65dd2fdaa8!2sSkill%20Training%20Nepal!5e0!3m2!1sen!2snp!4v1693372568617!5m2!1sen!2snp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+  "websiteLink": "https://skilltrainingnepal.com/",
+  "__v": 0
+}]
